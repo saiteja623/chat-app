@@ -1,0 +1,154 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+/* form .jsx */
+.form-paper {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+/* home.jsx*/
+.chat-paper {
+  width: 550px;
+  height: 80vh;
+  margin: 50px auto;
+}
+.chat-nav {
+  background: rgb(48, 48, 150);
+}
+.joined-msg {
+  margin: 10px auto;
+  padding: 4px;
+  min-width: 10px;
+  max-width: 80%;
+  text-align: center;
+  font-weight: 500;
+}
+.msg-by-admin {
+  text-align: right;
+  margin: 10px 0px;
+  background: rgb(48, 48, 150);
+  color: white;
+  padding: 6px;
+  height: auto;
+  border-radius: 6px;
+  font-size: 0.93rem;
+  display: table;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.msg-by-other {
+  min-width: 60px;
+  padding: 6px;
+  height: auto;
+  background: whitesmoke;
+  display: inline-block;
+  clear: both;
+  margin: 6px 10px;
+  margin-right: 40%;
+  border-radius: 6px;
+}
+.msg-by-other .sender-name p {
+  font-weight: 500;
+}
+.msg-by-other:nth-of-type(2n) .sender-name {
+  color: blue;
+}
+.msg-by-other:nth-of-type(2n + 1) .sender-name {
+  color: saddlebrown;
+}
+.msg-by-other:nth-of-type(3n + 1) .sender-name {
+  color: red;
+}
+.msg-by-other:nth-of-type(4n + 1) .sender-name {
+  color: green;
+}
+.msg-by-other:nth-of-type(5n + 1) .sender-name {
+  color: purple;
+}
+
+.bottom-grid {
+  background: rgb(48, 48, 150);
+  margin-top: auto;
+  margin-bottom: 0;
+  margin: auto;
+}
+.chat-paper button {
+  text-transform: capitalize;
+}
+.chat-paper input[type="text"] {
+  border-radius: 18px;
+  border: none;
+  margin-left: 10px;
+  box-shadow: none;
+  outline: none;
+  padding: 6px 14px;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  width: 90%;
+  margin: 5px 10px;
+  border-block-color: white;
+  border-color: transparent;
+  border-collapse: collapse;
+}
+
+/* media queries */
+@media only screen and (max-width: 556px) {
+  .chat-paper {
+    width: 100%;
+  }
+  .chat-paper button {
+    padding: 2px;
+  }
+}
+@media only screen and (max-width: 442px) {
+  .chat-paper input[type="text"] {
+    width: 85%;
+  }
+  .chat-paper {
+    margin: 0px;
+    height: 90vh;
+  }
+  .msg-by-admin p {
+    font-size: 0.82rem;
+  }
+  .msg-by-other p {
+    font-size: 0.82rem;
+  }
+  .joined-msg {
+    font-size: 0.88rem;
+    font-weight: 550;
+  }
+
+  .form-paper {
+    width: 90%;
+  }
+  .form-paper h6 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .form-paper p {
+    font-size: 0.8rem;
+  }
+  .form-paper input {
+    font-size: 0.9rem;
+  }
+  .form-paper button {
+    font-size: 0.7rem;
+    margin: 0px 10px;
+    text-transform: capitalize;
+  }
+  .chat-nav h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 4px 0px;
+  }
+}
